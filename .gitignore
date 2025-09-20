@@ -1,0 +1,17 @@
+# Игнорировать файлы с чувствительными данными (пароли, ключи)
+.env
+.env.local
+*.key
+
+# Игнорировать логи и системные файлы
+*.log
+logs/
+temp/
+
+# Игнорировать папки зависимостей (самые частые кандидаты!)
+node_modules/    # Для JavaScript/Node.js
+vendor/          # Для PHP (Composer)
+__pycache__/     # Для Python
+*.pyc            # Для Python (скомпилированные байт-код файлы)
+.DS_Store        # Служебный файл macOS
+Thumbs.db        # Кэш эскизов Windows
